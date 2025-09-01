@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explora tu Computadora</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/PrimeraWebsite/PAGE1/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Menú decorativo sin contenido -->
+    <nav class="decorative-horizontal-menu"></nav>
+
+    <!-- Video de fondo -->
+    <video autoplay muted loop id="video-fondo" playsinline>
+        <!-- Cambié la extensión para video compatible, si es imagen usar <img> o background CSS -->
+        <source src="/PrimeraWebsite/FONDOS/PosibleFondo.mp4" type="video/mp4" />
+        <!-- Si quieres usar imagen, cámbialo por background CSS o <img> -->
+    </video>
+
+    <!-- Menú hamburguesa -->
+    <nav class="navbar">
+        <div class="menu-icon" id="menu-icon" aria-label="Abrir menú" role="button" tabindex="0">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links" id="nav-links" role="menu" aria-hidden="true">
+            <button class="menu-btn" data-info="explorar" role="menuitem">Comenzar Exploración</button>
+            <button class="menu-btn" data-info="aprender" role="menuitem">Aprender Más</button>
+            <button class="menu-btn" data-info="contacto" role="menuitem">Contacto</button>
+            <button class="menu-btn" data-info="creadores" role="menuitem">Creadores</button>
+            <button class="menu-btn" data-info="redes" role="menuitem">Redes sociales</button>
+            <div id="menu-info" class="menu-info" aria-live="polite"></div>
+        </div>
+    </nav>
+
+    <!-- Título principal mejorado -->
+    <h1 class="main-title" tabindex="0">Computadoras 3D</h1>
+
+    <!-- Hero / Intro -->
+    <section class="hero" aria-label="Introducción">
+        <p class="interactivo" tabindex="0">
+            Descubre las partes internas de una computadora con nuestro modelo 3D interactivo.
+            Aprende cómo funciona cada componente de forma visual e inmersiva.
+        </p>
+        <div class="features" role="list">
+            <div class="feature" role="listitem" tabindex="0">
+                <i class="fas fa-cogs fa-3x" aria-hidden="true"></i>
+                <h3>Interactivo 3D</h3>
+                <p>Rota, acerca y explora cada componente en tiempo real</p>
+            </div>
+            <div class="feature" role="listitem" tabindex="0">
+                <i class="fas fa-chalkboard-teacher fa-3x" aria-hidden="true"></i>
+                <h3>Educativo</h3>
+                <p>Aprende la función de cada parte con explicaciones claras</p>
+            </div>
+            <div class="feature" role="listitem" tabindex="0">
+                <i class="fas fa-laptop fa-3x" aria-hidden="true"></i>
+                <h3>Moderno</h3>
+                <p>Tecnología web avanzada para una experiencia fluida</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" aria-label="Contacto">
+        <div class="contacto-container" tabindex="0">
+            <h1 class="contacto-titulo">CONTACTOS</h1>
+            <p class="contacto-subtitulo">¿Quieres comunicarte con nosotros?</p>
+          
+            <p>
+                Linkedin:
+                <a
+                  href="https://www.linkedin.com/in/matias-daniel-espinoza-saldarriaga-107510310/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Matias Espinoza  
+                </a>
+            </p>
+            <p>
+                Linkedin:
+                <a
+                  href="https://www.linkedin.com/in/rodrigo-ramiro-jara-perez-056602358/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Rodrigo Jara 
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <script src="/PrimeraWebsite/PAGE1/script.js"></script>
+</body>
+</html>
