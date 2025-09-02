@@ -71,7 +71,7 @@ body {
   height: 100%;
   gap: 0;
   padding: 0;
-  margin: 0 auto;
+  margin: 15px;
   flex: 1;
 }
 
@@ -312,6 +312,7 @@ p {
   background-color: #000000;
   height: 90px
 }
+
 
 
 
