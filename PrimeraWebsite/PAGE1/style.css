@@ -49,7 +49,7 @@ body {
 /* Barra horizontal arriba */
 .navbar {
   position: fixed;
-  top: 0;
+  top: 40px;
   left: 0;
   width: 100vw;
   height: 90px;
@@ -312,6 +312,7 @@ p {
   background-color: #000000;
   height: 90px
 }
+
 
 
 
