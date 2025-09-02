@@ -1,6 +1,6 @@
 /* Reset general */
 * {
-  margin: 0;
+  margin: 10 px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -316,3 +316,4 @@ p {
   background-color: #000000;
   height: 90px
 }
+
