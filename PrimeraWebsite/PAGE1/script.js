@@ -3,10 +3,26 @@ const menuIcon = document.getElementById('menu-icon');
 const navLinks = document.getElementById('nav-links');
 const menuBtns = document.querySelectorAll('.menu-btn');
 const menuInfo = document.getElementById('menu-info');
+const hamburger = document.querySelector('.hamburger');
 
-menuIcon.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+// Mostrar/ocultar el menú en dispositivos móviles
+if (hamburger) {
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navLinks.classList.toggle('active');
+  });
+
+  // Cerrar el menú si se hace clic fuera de él
+  document.addEventListener('click', (e) => {
+    if (
+      navLinks.classList.contains('active') &&
+      !navLinks.contains(e.target) &&
+      !menuIcon.contains(e.target)
+    ) {
+      navLinks.classList.remove('active');
+    }
+  });
+}
 
 const infoContent = {
   explorar: "Aquí puedes comenzar la exploración del modelo 3D de la computadora.",
