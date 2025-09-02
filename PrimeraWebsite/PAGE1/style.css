@@ -35,29 +35,30 @@ body {
   background-repeat: no-repeat;
   color: #fff;
   height: 100vh;
-  margin-left: 260px; /* Deja espacio para el sidebar */
+  margin-left: 0; /* Ya no hay sidebar */
+  padding-top: 90px; /* Deja espacio para la barra horizontal */
 }
 
-/* Sidebar lateral siempre visible */
+/* Barra horizontal arriba */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 260px;
-  height: 100vh;
+  width: 100vw;
+  height: 90px;
   background: #fff;
-  padding: 24px 0 0 0;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   z-index: 1001;
-  box-shadow: 2px 0 16px rgba(0,0,0,0.08);
 }
 
-/* Opciones de menú */
+/* Opciones del menú horizontal */
 .nav-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   gap: 0;
   padding: 0;
   margin: 0;
@@ -68,7 +69,7 @@ body {
   --menu-hover-color: #e2e7ec; /* igual al color de .main-title */
 }
 
-/* Botones del menú lateral */
+/* Botones del menú horizontal */
 .menu-btn {
   background: none;
   border: none;
@@ -76,13 +77,17 @@ body {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 1.1em;
   font-weight: bold;
-  padding: 18px 32px;
-  text-align: left;
+  padding: 0 32px;
+  height: 90px;
+  text-align: center;
   cursor: pointer;
   border-radius: 0;
-  width: 100%;
+  width: auto;
   margin: 0;
   transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  outline: none;
 }
 
 /* Hover con color igual al título principal */
@@ -90,21 +95,11 @@ body {
 .menu-btn:focus {
   color: var(--menu-hover-color);
   background: rgba(0, 188, 212, 0.08);
-  outline: none;
 }
 
 /* Para que el menú-info y otros detalles no cambien */
 .menu-info {
-  margin-top: 14px;
-  color: #fff;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1em;
-  background: rgba(22, 22, 46, 0.85);
-  border-radius: 12px;
-  padding: 14px 18px;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  display: none; /* Si no lo usas, puedes ocultarlo */
 }
 
 /* Video de fondo */
@@ -148,7 +143,7 @@ h1, .main-title {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   padding: 20px;
   border-radius: 65px;
@@ -298,14 +293,3 @@ p {
   background-color: #000000;
   height: 90px
 }
-
-
-
-
-
-
-
-
-
-
-
