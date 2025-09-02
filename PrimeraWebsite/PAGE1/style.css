@@ -11,7 +11,12 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
+/*logo */
+#menu-icon img{
+  height: 70 px;
+  width:auto;
+  display:block;
+}
 /* Scrollbar personalizado */
 ::-webkit-scrollbar {
   width: 12px;
@@ -294,3 +299,4 @@ p {
   background-color: #000000;
   height: 90px
 }
+
