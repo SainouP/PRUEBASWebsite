@@ -1,6 +1,6 @@
 /* Reset general */
 * {
-  margin: 10 px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -13,12 +13,16 @@ body {
 }
 /*logo */
 #menu-icon {
-  margin-left: 55px; /* mueve el logo a la derecha */
+  margin-left: 40px; /* mueve el logo a la derecha */
   display: flex;
   align-items: center;
   height: 90px;
 }
-
+#menu-icon img{
+  height: 70px;
+  width:auto;
+  display:block;
+}
 /* Scrollbar personalizado */
 ::-webkit-scrollbar {
   width: 12px;
@@ -71,7 +75,7 @@ body {
   height: 100%;
   gap: 0;
   padding: 0;
-  margin: 15px;
+  margin: 0 auto;
   flex: 1;
 }
 
@@ -90,13 +94,17 @@ body {
   font-weight: bold;
   padding: 0 32px;
   height: 90px;
+  display: flex;           /* Centra el contenido verticalmente */
+  align-items: center;     /* Centra verticalmente dentro del botón */
+  justify-content: center; /* Centra horizontalmente dentro del botón */
+  text-align: center;
   cursor: pointer;
   border-radius: 0;
   width: auto;
   margin: 0;
   transition: color 0.2s;
   outline: none;
-  text-decoration: none; /* quita subrayado en todos */
+  text-decoration: none;
 }
 
 /* Quita subrayado SOLO en contacto (por si el href lo pone en algunos navegadores) */
@@ -311,12 +319,3 @@ p {
   background-color: #000000;
   height: 90px
 }
-
-
-
-
-
-
-
-
-
