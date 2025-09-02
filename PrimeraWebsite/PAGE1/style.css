@@ -12,8 +12,14 @@ body {
   scroll-behavior: smooth;
 }
 /*logo */
+#menu-icon {
+  margin-left: 40px; /* mueve el logo a la derecha */
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
 #menu-icon img{
-  height: 70 px;
+  height: 70px;
   width:auto;
   display:block;
 }
@@ -55,21 +61,22 @@ body {
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* logo a la izquierda, nav centrado */
   z-index: 1001;
 }
 
 /* Opciones del menú horizontal */
 .nav-links {
   display: flex;
-  flex-direction: row;     /* <-- horizontal */
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* centrado horizontal */
   width: 100%;
   height: 100%;
   gap: 0;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  flex: 1;
 }
 
 /* Color del título principal (lo usaremos en hover) */
@@ -94,6 +101,16 @@ body {
   margin: 0;
   transition: color 0.2s;
   outline: none;
+  text-decoration: none; /* quita subrayado en todos */
+}
+
+/* Quita subrayado SOLO en contacto (por si el href lo pone en algunos navegadores) */
+.menu-btn.contacto-link {
+  text-decoration: none !important;
+}
+.menu-btn.contacto-link:hover,
+.menu-btn.contacto-link:focus {
+  text-decoration: none !important;
 }
 
 /* Hover: solo la letra cambia de color (no el fondo) */
@@ -299,4 +316,3 @@ p {
   background-color: #000000;
   height: 90px
 }
-
