@@ -38,5 +38,3 @@ menuBtns.forEach(btn => {
     }
   });
 });
-
-
