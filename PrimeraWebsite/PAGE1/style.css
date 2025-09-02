@@ -13,7 +13,7 @@ body {
 }
 /*logo */
 #menu-icon {
-  margin-left: 40px; /* mueve el logo a la derecha */
+  margin-left: 55px; /* mueve el logo a la derecha */
   display: flex;
   align-items: center;
   height: 90px;
@@ -312,5 +312,6 @@ p {
   background-color: #000000;
   height: 90px
 }
+
 
 
