@@ -90,7 +90,6 @@ body {
   font-weight: bold;
   padding: 0 32px;
   height: 90px;
-  display: flex;
   text-align: center;
   cursor: pointer;
   border-radius: 0;
@@ -313,6 +312,7 @@ p {
   background-color: #000000;
   height: 90px
 }
+
 
 
 
