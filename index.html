@@ -19,8 +19,17 @@
     />
 </head>
 <body>
-    <!-- Menú decorativo sin contenido -->
-    <nav class="decorative-horizontal-menu"></nav>
+   <!-- menu desplegado -->
+   <nav class="navbar">
+       <div class="nav-links" id="nav-links" role="menu" aria-hidden="false">
+           <button class="menu-btn" data-info="explorar" role="menuitem">Comenzar Exploración</button>
+            <button class="menu-btn" data-info="aprender" role="menuitem">Aprender Más</button>
+            <button class="menu-btn" data-info="contacto" role="menuitem">Contacto</button>
+            <button class="menu-btn" data-info="creadores" role="menuitem">Creadores</button>
+            <button class="menu-btn" data-info="redes" role="menuitem">Redes sociales</button>
+            <div id="menu-info" class="menu-info" aria-live="polite"></div>
+       </div>
+   </nav>
 
     <!-- Video de fondo -->
     <video autoplay muted loop id="video-fondo" playsinline>
@@ -29,20 +38,6 @@
         <!-- Si quieres usar imagen, cámbialo por background CSS o <img> -->
     </video>
 
-    <!-- Menú hamburguesa -->
-    <nav class="navbar">
-        <div class="menu-icon" id="menu-icon" aria-label="Abrir menú" role="button" tabindex="0">
-            <img src="PrimeraWebsite/FONDOS/menu.png" alt="Menú" style="height:40px;">
-        </div>
-        <div class="nav-links" id="nav-links" role="menu" aria-hidden="true">
-            <button class="menu-btn" data-info="explorar" role="menuitem">Comenzar Exploración</button>
-            <button class="menu-btn" data-info="aprender" role="menuitem">Aprender Más</button>
-            <button class="menu-btn" data-info="contacto" role="menuitem">Contacto</button>
-            <button class="menu-btn" data-info="creadores" role="menuitem">Creadores</button>
-            <button class="menu-btn" data-info="redes" role="menuitem">Redes sociales</button>
-            <div id="menu-info" class="menu-info" aria-live="polite"></div>
-        </div>
-    </nav>
 
     <!-- Título principal mejorado -->
     <h1 class="main-title" tabindex="0">Computadoras 3D</h1>
@@ -114,6 +109,7 @@
     <script src="PrimeraWebsite/PAGE1/script.js"></script>
 </body>
 </html>
+
 
 
 
