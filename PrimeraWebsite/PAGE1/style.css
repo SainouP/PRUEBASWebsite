@@ -29,7 +29,7 @@ body {
 body {
   font-family: 'Arial', sans-serif;
   background-color: #000;
-  background-image: url('PrimeraWebsite/FONDOS/PosibleFondo.jpg');
+  background-image: url('/PrimeraWebsite/FONDOS/PosibleFondo.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
