@@ -403,3 +403,15 @@ p {
   background-color: #000000;
   height: 90px
 }
+
+/* === ADAPTACIÓN DEL TÍTULO EN MÓVILES === */
+@media (max-width: 600px) {
+  h1, .main-title {
+    font-size: 2.2em;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    padding: 0 4vw;
+    word-break: break-word;
+    text-shadow: 0 0 6px #00ffc8, 0 0 12px #007f7f, 0 0 18px #00ffcc;
+  }
+}
