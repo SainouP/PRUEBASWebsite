@@ -404,14 +404,55 @@ p {
   height: 90px
 }
 
-/* === ADAPTACIÓN DEL TÍTULO EN MÓVILES === */
+/* ====== CORRECCIÓN RESPONSIVE MÓVIL ====== */
 @media (max-width: 600px) {
+  body {
+    padding-top: 70px; /* Menos espacio para la navbar más chica en móvil */
+  }
+
   h1, .main-title {
-    font-size: 2.2em;
-    margin-top: 16px;
-    margin-bottom: 18px;
-    padding: 0 4vw;
+    font-size: 2.1em;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    padding: 0 3vw;
     word-break: break-word;
     text-shadow: 0 0 6px #00ffc8, 0 0 12px #007f7f, 0 0 18px #00ffcc;
+  }
+
+  .hero {
+    min-height: unset;
+    padding: 12px 0 12px 0;
+    border-radius: 30px;
+    margin-bottom: 0;
+  }
+
+  .interactivo {
+    font-size: 1em;
+    padding: 16px 10px;
+    margin: 0 auto 18px auto;
+    max-width: 95vw;
+    border-radius: 24px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 24px;
+    align-items: center;
+  }
+
+  .feature {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+
+  #contacto {
+    min-height: unset;
+    padding: 30px 0 20px 0;
+  }
+  .contacto-container {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 97vw;
   }
 }
